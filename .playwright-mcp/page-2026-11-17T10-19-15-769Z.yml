@@ -1,0 +1,407 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "SpendTrack home" [ref=e4] [cursor=pointer]:
+        - /url: ./
+        - text: SpendTrack
+        - generic [ref=e9]: .
+      - generic [ref=e10]: A little clarity goes a long way.
+      - generic [ref=e11]: $ USD
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: YOUR PERSONAL MONEY JOURNAL
+        - heading "Your money, in perspective." [level=1] [ref=e16]
+        - paragraph [ref=e17]: Small expenses. Bigger picture. Keep track of where it all goes.
+      - generic [ref=e18]:
+        - generic [aria-hidden] [ref=e19]: ▦
+        - generic [ref=e20]:
+          - text: Annual tracker
+          - generic [ref=e21]: January – December
+    - generic [ref=e22]:
+      - tablist "Expense tracker views" [ref=e23]:
+        - tab "Expenses" [selected] [ref=e24] [cursor=pointer]
+        - tab "Overview" [ref=e25] [cursor=pointer]
+      - status [ref=e26]: Saved on this device
+    - tabpanel "Expenses" [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - heading "Monthly expenses" [level=2] [ref=e31]
+            - paragraph [ref=e32]: Make every dollar accounted for.
+          - generic [ref=e33]: 12 months · 5 categories
+        - paragraph [ref=e34]: Enter zero or positive USD amounts with up to two decimal places (for example, 12.50). Blank means zero. Valid changes save automatically.
+        - region "Monthly expense inputs" [ref=e35]:
+          - table "Monthly expenses in USD, by category" [ref=e36]:
+            - caption [ref=e37]: Monthly expenses in USD, by category
+            - rowgroup [ref=e38]:
+              - row [ref=e39]:
+                - columnheader "MONTH" [ref=e40]
+                - columnheader "Food" [ref=e41]:
+                  - generic [aria-hidden] [ref=e42]: ◒
+                  - text: Food
+                - columnheader "Transportation" [ref=e43]:
+                  - generic [aria-hidden] [ref=e44]: ↗
+                  - text: Transportation
+                - columnheader "Shopping" [ref=e45]:
+                  - generic [aria-hidden] [ref=e46]: ◇
+                  - text: Shopping
+                - columnheader "Bills" [ref=e47]:
+                  - generic [aria-hidden] [ref=e48]: ▤
+                  - text: Bills
+                - columnheader "Other" [ref=e49]:
+                  - generic [aria-hidden] [ref=e50]: ···
+                  - text: Other
+                - columnheader "MONTHLY TOTAL" [ref=e51]
+            - rowgroup [ref=e52]:
+              - row [ref=e53]:
+                - rowheader "January" [ref=e54]: 01January
+                - cell [ref=e55]:
+                  - generic [ref=e56]:
+                    - generic [aria-hidden]: $
+                    - textbox "January Food in USD" [ref=e57]:
+                      - /placeholder: "0.00"
+                - cell [ref=e58]:
+                  - generic [ref=e59]:
+                    - generic [aria-hidden]: $
+                    - textbox "January Transportation in USD" [ref=e60]:
+                      - /placeholder: "0.00"
+                - cell [ref=e61]:
+                  - generic [ref=e62]:
+                    - generic [aria-hidden]: $
+                    - textbox "January Shopping in USD" [ref=e63]:
+                      - /placeholder: "0.00"
+                - cell [ref=e64]:
+                  - generic [ref=e65]:
+                    - generic [aria-hidden]: $
+                    - textbox "January Bills in USD" [ref=e66]:
+                      - /placeholder: "0.00"
+                - cell [ref=e67]:
+                  - generic [ref=e68]:
+                    - generic [aria-hidden]: $
+                    - textbox "January Other in USD" [ref=e69]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e70]
+              - row [ref=e71]:
+                - rowheader "February" [ref=e72]: 02February
+                - cell [ref=e73]:
+                  - generic [ref=e74]:
+                    - generic [aria-hidden]: $
+                    - textbox "February Food in USD" [ref=e75]:
+                      - /placeholder: "0.00"
+                - cell [ref=e76]:
+                  - generic [ref=e77]:
+                    - generic [aria-hidden]: $
+                    - textbox "February Transportation in USD" [ref=e78]:
+                      - /placeholder: "0.00"
+                - cell [ref=e79]:
+                  - generic [ref=e80]:
+                    - generic [aria-hidden]: $
+                    - textbox "February Shopping in USD" [ref=e81]:
+                      - /placeholder: "0.00"
+                - cell [ref=e82]:
+                  - generic [ref=e83]:
+                    - generic [aria-hidden]: $
+                    - textbox "February Bills in USD" [ref=e84]:
+                      - /placeholder: "0.00"
+                - cell [ref=e85]:
+                  - generic [ref=e86]:
+                    - generic [aria-hidden]: $
+                    - textbox "February Other in USD" [ref=e87]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e88]
+              - row [ref=e89]:
+                - rowheader "March" [ref=e90]: 03March
+                - cell [ref=e91]:
+                  - generic [ref=e92]:
+                    - generic [aria-hidden]: $
+                    - textbox "March Food in USD" [ref=e93]:
+                      - /placeholder: "0.00"
+                - cell [ref=e94]:
+                  - generic [ref=e95]:
+                    - generic [aria-hidden]: $
+                    - textbox "March Transportation in USD" [ref=e96]:
+                      - /placeholder: "0.00"
+                - cell [ref=e97]:
+                  - generic [ref=e98]:
+                    - generic [aria-hidden]: $
+                    - textbox "March Shopping in USD" [ref=e99]:
+                      - /placeholder: "0.00"
+                - cell [ref=e100]:
+                  - generic [ref=e101]:
+                    - generic [aria-hidden]: $
+                    - textbox "March Bills in USD" [ref=e102]:
+                      - /placeholder: "0.00"
+                - cell [ref=e103]:
+                  - generic [ref=e104]:
+                    - generic [aria-hidden]: $
+                    - textbox "March Other in USD" [ref=e105]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e106]
+              - row [ref=e107]:
+                - rowheader "April" [ref=e108]: 04April
+                - cell [ref=e109]:
+                  - generic [ref=e110]:
+                    - generic [aria-hidden]: $
+                    - textbox "April Food in USD" [ref=e111]:
+                      - /placeholder: "0.00"
+                - cell [ref=e112]:
+                  - generic [ref=e113]:
+                    - generic [aria-hidden]: $
+                    - textbox "April Transportation in USD" [ref=e114]:
+                      - /placeholder: "0.00"
+                - cell [ref=e115]:
+                  - generic [ref=e116]:
+                    - generic [aria-hidden]: $
+                    - textbox "April Shopping in USD" [ref=e117]:
+                      - /placeholder: "0.00"
+                - cell [ref=e118]:
+                  - generic [ref=e119]:
+                    - generic [aria-hidden]: $
+                    - textbox "April Bills in USD" [ref=e120]:
+                      - /placeholder: "0.00"
+                - cell [ref=e121]:
+                  - generic [ref=e122]:
+                    - generic [aria-hidden]: $
+                    - textbox "April Other in USD" [ref=e123]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e124]
+              - row [ref=e125]:
+                - rowheader "May" [ref=e126]: 05May
+                - cell [ref=e127]:
+                  - generic [ref=e128]:
+                    - generic [aria-hidden]: $
+                    - textbox "May Food in USD" [ref=e129]:
+                      - /placeholder: "0.00"
+                - cell [ref=e130]:
+                  - generic [ref=e131]:
+                    - generic [aria-hidden]: $
+                    - textbox "May Transportation in USD" [ref=e132]:
+                      - /placeholder: "0.00"
+                - cell [ref=e133]:
+                  - generic [ref=e134]:
+                    - generic [aria-hidden]: $
+                    - textbox "May Shopping in USD" [ref=e135]:
+                      - /placeholder: "0.00"
+                - cell [ref=e136]:
+                  - generic [ref=e137]:
+                    - generic [aria-hidden]: $
+                    - textbox "May Bills in USD" [ref=e138]:
+                      - /placeholder: "0.00"
+                - cell [ref=e139]:
+                  - generic [ref=e140]:
+                    - generic [aria-hidden]: $
+                    - textbox "May Other in USD" [ref=e141]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e142]
+              - row [ref=e143]:
+                - rowheader "June" [ref=e144]: 06June
+                - cell [ref=e145]:
+                  - generic [ref=e146]:
+                    - generic [aria-hidden]: $
+                    - textbox "June Food in USD" [ref=e147]:
+                      - /placeholder: "0.00"
+                - cell [ref=e148]:
+                  - generic [ref=e149]:
+                    - generic [aria-hidden]: $
+                    - textbox "June Transportation in USD" [ref=e150]:
+                      - /placeholder: "0.00"
+                - cell [ref=e151]:
+                  - generic [ref=e152]:
+                    - generic [aria-hidden]: $
+                    - textbox "June Shopping in USD" [ref=e153]:
+                      - /placeholder: "0.00"
+                - cell [ref=e154]:
+                  - generic [ref=e155]:
+                    - generic [aria-hidden]: $
+                    - textbox "June Bills in USD" [ref=e156]:
+                      - /placeholder: "0.00"
+                - cell [ref=e157]:
+                  - generic [ref=e158]:
+                    - generic [aria-hidden]: $
+                    - textbox "June Other in USD" [ref=e159]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e160]
+              - row [ref=e161]:
+                - rowheader "July" [ref=e162]: 07July
+                - cell [ref=e163]:
+                  - generic [ref=e164]:
+                    - generic [aria-hidden]: $
+                    - textbox "July Food in USD" [ref=e165]:
+                      - /placeholder: "0.00"
+                - cell [ref=e166]:
+                  - generic [ref=e167]:
+                    - generic [aria-hidden]: $
+                    - textbox "July Transportation in USD" [ref=e168]:
+                      - /placeholder: "0.00"
+                - cell [ref=e169]:
+                  - generic [ref=e170]:
+                    - generic [aria-hidden]: $
+                    - textbox "July Shopping in USD" [ref=e171]:
+                      - /placeholder: "0.00"
+                - cell [ref=e172]:
+                  - generic [ref=e173]:
+                    - generic [aria-hidden]: $
+                    - textbox "July Bills in USD" [ref=e174]:
+                      - /placeholder: "0.00"
+                - cell [ref=e175]:
+                  - generic [ref=e176]:
+                    - generic [aria-hidden]: $
+                    - textbox "July Other in USD" [ref=e177]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e178]
+              - row [ref=e179]:
+                - rowheader "August" [ref=e180]: 08August
+                - cell [ref=e181]:
+                  - generic [ref=e182]:
+                    - generic [aria-hidden]: $
+                    - textbox "August Food in USD" [ref=e183]:
+                      - /placeholder: "0.00"
+                - cell [ref=e184]:
+                  - generic [ref=e185]:
+                    - generic [aria-hidden]: $
+                    - textbox "August Transportation in USD" [ref=e186]:
+                      - /placeholder: "0.00"
+                - cell [ref=e187]:
+                  - generic [ref=e188]:
+                    - generic [aria-hidden]: $
+                    - textbox "August Shopping in USD" [ref=e189]:
+                      - /placeholder: "0.00"
+                - cell [ref=e190]:
+                  - generic [ref=e191]:
+                    - generic [aria-hidden]: $
+                    - textbox "August Bills in USD" [ref=e192]:
+                      - /placeholder: "0.00"
+                - cell [ref=e193]:
+                  - generic [ref=e194]:
+                    - generic [aria-hidden]: $
+                    - textbox "August Other in USD" [ref=e195]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e196]
+              - row [ref=e197]:
+                - rowheader "September" [ref=e198]: 09September
+                - cell [ref=e199]:
+                  - generic [ref=e200]:
+                    - generic [aria-hidden]: $
+                    - textbox "September Food in USD" [ref=e201]:
+                      - /placeholder: "0.00"
+                - cell [ref=e202]:
+                  - generic [ref=e203]:
+                    - generic [aria-hidden]: $
+                    - textbox "September Transportation in USD" [ref=e204]:
+                      - /placeholder: "0.00"
+                - cell [ref=e205]:
+                  - generic [ref=e206]:
+                    - generic [aria-hidden]: $
+                    - textbox "September Shopping in USD" [ref=e207]:
+                      - /placeholder: "0.00"
+                - cell [ref=e208]:
+                  - generic [ref=e209]:
+                    - generic [aria-hidden]: $
+                    - textbox "September Bills in USD" [ref=e210]:
+                      - /placeholder: "0.00"
+                - cell [ref=e211]:
+                  - generic [ref=e212]:
+                    - generic [aria-hidden]: $
+                    - textbox "September Other in USD" [ref=e213]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e214]
+              - row [ref=e215]:
+                - rowheader "October" [ref=e216]: 10October
+                - cell [ref=e217]:
+                  - generic [ref=e218]:
+                    - generic [aria-hidden]: $
+                    - textbox "October Food in USD" [ref=e219]:
+                      - /placeholder: "0.00"
+                - cell [ref=e220]:
+                  - generic [ref=e221]:
+                    - generic [aria-hidden]: $
+                    - textbox "October Transportation in USD" [ref=e222]:
+                      - /placeholder: "0.00"
+                - cell [ref=e223]:
+                  - generic [ref=e224]:
+                    - generic [aria-hidden]: $
+                    - textbox "October Shopping in USD" [ref=e225]:
+                      - /placeholder: "0.00"
+                - cell [ref=e226]:
+                  - generic [ref=e227]:
+                    - generic [aria-hidden]: $
+                    - textbox "October Bills in USD" [ref=e228]:
+                      - /placeholder: "0.00"
+                - cell [ref=e229]:
+                  - generic [ref=e230]:
+                    - generic [aria-hidden]: $
+                    - textbox "October Other in USD" [ref=e231]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e232]
+              - row [ref=e233]:
+                - rowheader "November" [ref=e234]: 11November
+                - cell [ref=e235]:
+                  - generic [ref=e236]:
+                    - generic [aria-hidden]: $
+                    - textbox "November Food in USD" [ref=e237]:
+                      - /placeholder: "0.00"
+                - cell [ref=e238]:
+                  - generic [ref=e239]:
+                    - generic [aria-hidden]: $
+                    - textbox "November Transportation in USD" [ref=e240]:
+                      - /placeholder: "0.00"
+                - cell [ref=e241]:
+                  - generic [ref=e242]:
+                    - generic [aria-hidden]: $
+                    - textbox "November Shopping in USD" [ref=e243]:
+                      - /placeholder: "0.00"
+                - cell [ref=e244]:
+                  - generic [ref=e245]:
+                    - generic [aria-hidden]: $
+                    - textbox "November Bills in USD" [ref=e246]:
+                      - /placeholder: "0.00"
+                - cell [ref=e247]:
+                  - generic [ref=e248]:
+                    - generic [aria-hidden]: $
+                    - textbox "November Other in USD" [ref=e249]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e250]
+              - row [ref=e251]:
+                - rowheader "December" [ref=e252]: 12December
+                - cell [ref=e253]:
+                  - generic [ref=e254]:
+                    - generic [aria-hidden]: $
+                    - textbox "December Food in USD" [ref=e255]:
+                      - /placeholder: "0.00"
+                - cell [ref=e256]:
+                  - generic [ref=e257]:
+                    - generic [aria-hidden]: $
+                    - textbox "December Transportation in USD" [ref=e258]:
+                      - /placeholder: "0.00"
+                - cell [ref=e259]:
+                  - generic [ref=e260]:
+                    - generic [aria-hidden]: $
+                    - textbox "December Shopping in USD" [ref=e261]:
+                      - /placeholder: "0.00"
+                - cell [ref=e262]:
+                  - generic [ref=e263]:
+                    - generic [aria-hidden]: $
+                    - textbox "December Bills in USD" [ref=e264]:
+                      - /placeholder: "0.00"
+                - cell [ref=e265]:
+                  - generic [ref=e266]:
+                    - generic [aria-hidden]: $
+                    - textbox "December Other in USD" [ref=e267]:
+                      - /placeholder: "0.00"
+                - cell "$0.00" [ref=e268]
+            - rowgroup [ref=e269]:
+              - row [ref=e270]:
+                - rowheader "Yearly total" [ref=e271]
+                - cell "A full year, all in one place." [ref=e272]
+                - cell "$0.00" [ref=e273]
+        - status [ref=e274]
+      - generic [ref=e275]:
+        - generic [aria-hidden] [ref=e276]: ↗
+        - paragraph [ref=e277]:
+          - strong [ref=e278]: Little by little, it adds up.
+          - text: Head to Overview to see the story behind your spending.
+        - button "View overview" [ref=e279] [cursor=pointer]: View overview →
+    - generic [ref=e280]:
+      - generic [ref=e281]: Spend thoughtfully. Live fully.
+      - generic [ref=e282]: Stored in your browser · No account needed

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A little clarity for your everyday spending. Track a full year of expenses in one place.">
+  <title>SpendTrack — Your money, in perspective</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%230f766e'/%3E%3Cpath d='M10 27V20M20 27V12M30 27V16' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="app-container d-flex justify-content-between align-items-center">
+      <a class="brand" href="./" aria-label="SpendTrack home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>SpendTrack<span class="brand-dot">.</span></a>
+      <span class="header-note">A little clarity goes a long way.</span>
+      <span class="currency-badge"><span aria-hidden="true">$</span> USD</span>
+    </div>
+  </header>
+  <main class="app-container">
+    <div class="intro">
+      <div><p class="eyebrow">YOUR PERSONAL MONEY JOURNAL</p><h1>Your money, in perspective.</h1><p class="subtitle">Small expenses. Bigger picture. Keep track of where it all goes.</p></div>
+      <div class="period-badge"><span aria-hidden="true">▦</span><div>Annual tracker<small>January – December</small></div></div>
+    </div>
+    <div class="workspace-nav">
+      <div class="nav nav-pills" role="tablist" aria-label="Expense tracker views">
+        <button class="nav-link active" id="expenses-tab" role="tab" aria-selected="true" aria-controls="expenses-panel" type="button">Expenses</button>
+        <button class="nav-link" id="overview-tab" role="tab" aria-selected="false" aria-controls="overview-panel" tabindex="-1" type="button">Overview</button>
+      </div>
+      <span class="save-status" id="save-status" role="status">Saved on this device</span>
+    </div>
+    <div id="storage-warning" class="alert alert-warning" role="status" hidden></div>
+    <section id="expenses-panel" role="tabpanel" aria-labelledby="expenses-tab">
+      <div class="surface">
+        <div class="section-heading"><div><h2>Monthly expenses</h2><p>Make every dollar accounted for.</p></div><span class="soft-badge">12 months · 5 categories</span></div>
+        <p class="input-hint" id="input-hint">Enter zero or positive USD amounts with up to two decimal places (for example, 12.50). Blank means zero. Valid changes save automatically. <span class="mobile-hint">Swipe to see all categories →</span></p>
+        <div class="expense-scroll" role="region" aria-label="Monthly expense inputs" tabindex="0">
+          <table class="table expense-table"><caption class="visually-hidden">Monthly expenses in USD, by category</caption><thead><tr><th scope="col">MONTH</th><th scope="col"><span class="category-symbol food" aria-hidden="true">◒</span>Food</th><th scope="col"><span class="category-symbol transport" aria-hidden="true">↗</span>Transportation</th><th scope="col"><span class="category-symbol shopping" aria-hidden="true">◇</span>Shopping</th><th scope="col"><span class="category-symbol bills" aria-hidden="true">▤</span>Bills</th><th scope="col"><span class="category-symbol other" aria-hidden="true">···</span>Other</th><th scope="col" class="amount">MONTHLY TOTAL</th></tr></thead><tbody id="expense-rows"></tbody><tfoot><tr><th scope="row">Yearly total</th><td colspan="5">A full year, all in one place.</td><td class="amount" id="yearly-total">$0.00</td></tr></tfoot></table>
+        </div>
+        <p id="validation-message" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+      <div class="bottom-note"><span class="note-icon" aria-hidden="true">↗</span><p><strong>Little by little, it adds up.</strong> Head to Overview to see the story behind your spending.</p><button class="text-button" id="view-overview" type="button">View overview <span aria-hidden="true">→</span></button></div>
+    </section>
+    <section id="overview-panel" role="tabpanel" aria-labelledby="overview-tab" hidden>
+      <div class="row g-3 summary-row">
+        <div class="col-md-4"><article class="summary-card primary-card"><p>Total spending <span aria-hidden="true">↗</span></p><h2 id="total-spending">$0.00</h2><small>Across your entire year</small></article></div>
+        <div class="col-md-4"><article class="summary-card"><p>Average monthly spending <span aria-hidden="true">≈</span></p><h2 id="average-spending">$0.00</h2><small>Total spending ÷ 12 months</small></article></div>
+        <div class="col-md-4"><article class="summary-card"><p>Highest spending month <span aria-hidden="true">▥</span></p><h2 id="highest-month" class="highest-month">No expenses yet</h2><small id="highest-amount">Your spending story starts here</small></article></div>
+      </div>
+      <div class="surface chart-surface"><div class="section-heading"><div><h2>Your year at a glance</h2><p>Monthly spending, from January to December.</p></div><span class="chart-legend"><i></i>Monthly total</span></div><div class="chart-wrap"><div class="chart-frame"><canvas id="monthly-chart" role="img" aria-label="Bar chart of monthly spending in USD. Exact values are in the monthly totals table below."></canvas><p id="chart-warning" role="status" hidden>The chart could not load. Your monthly totals are available below.</p></div></div></div>
+      <div class="surface totals-surface"><div class="section-heading"><div><h2>Monthly breakdown</h2><p>The numbers behind the picture.</p></div><span class="soft-badge">USD</span></div><div class="monthly-grid" id="monthly-breakdown" role="table" aria-label="Monthly totals in USD"></div></div>
+    </section>
+    <footer><span>Spend thoughtfully. Live fully.</span><span>Stored in your browser · No account needed</span></footer>
+  </main>
+</body>
+</html>

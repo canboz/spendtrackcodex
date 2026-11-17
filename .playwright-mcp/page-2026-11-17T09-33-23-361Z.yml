@@ -1,0 +1,98 @@
+- generic [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "SpendTrack home" [ref=f2e4] [cursor=pointer]:
+        - /url: ./
+        - text: SpendTrack
+        - generic [ref=f2e9]: .
+      - generic [ref=f2e10]: A little clarity goes a long way.
+      - generic [ref=f2e11]: $ USD
+  - main [ref=f2e12]:
+    - generic [ref=f2e13]:
+      - generic [ref=f2e14]:
+        - paragraph [ref=f2e15]: YOUR PERSONAL MONEY JOURNAL
+        - heading "Your money, in perspective." [level=1] [ref=f2e16]
+        - paragraph [ref=f2e17]: Small expenses. Bigger picture. Keep track of where it all goes.
+      - generic [ref=f2e18]:
+        - generic [aria-hidden] [ref=f2e19]: ▦
+        - generic [ref=f2e20]:
+          - text: Annual tracker
+          - generic [ref=f2e21]: January – December
+    - generic [ref=f2e22]:
+      - tablist "Expense tracker views" [ref=f2e23]:
+        - tab "Expenses" [ref=f2e24] [cursor=pointer]
+        - tab "Overview" [active] [selected] [ref=f2e25] [cursor=pointer]
+      - status [ref=f2e26]: Saved on this device
+    - tabpanel "Overview" [ref=f2e283]:
+      - generic [ref=f2e284]:
+        - article [ref=f2e286]:
+          - paragraph [ref=f2e287]:
+            - text: Total spending
+            - generic [aria-hidden] [ref=f2e288]: ↗
+          - heading "$3,705.00" [level=2] [ref=f2e289]
+          - text: Across your entire year
+        - article [ref=f2e291]:
+          - paragraph [ref=f2e292]:
+            - text: Average monthly spending
+            - generic [aria-hidden] [ref=f2e293]: ≈
+          - heading "$308.75" [level=2] [ref=f2e294]
+          - text: Total spending ÷ 12 months
+        - article [ref=f2e296]:
+          - paragraph [ref=f2e297]:
+            - text: Highest spending month
+            - generic [aria-hidden] [ref=f2e298]: ▥
+          - heading "January" [level=2] [ref=f2e299]
+          - text: $2,855.00 in monthly expenses
+      - generic [ref=f2e300]:
+        - generic [ref=f2e301]:
+          - generic [ref=f2e302]:
+            - heading "Your year at a glance" [level=2] [ref=f2e303]
+            - paragraph [ref=f2e304]: Monthly spending, from January to December.
+          - generic [ref=f2e305]: Monthly total
+        - img "Bar chart of monthly spending in USD. Exact values are in the monthly totals table below." [ref=f2e308]
+      - generic [ref=f2e309]:
+        - generic [ref=f2e310]:
+          - generic [ref=f2e311]:
+            - heading "Monthly breakdown" [level=2] [ref=f2e312]
+            - paragraph [ref=f2e313]: The numbers behind the picture.
+          - generic [ref=f2e314]: USD
+        - table "Monthly totals in USD" [ref=f2e315]:
+          - row [ref=f2e316]:
+            - rowheader "January" [ref=f2e317]
+            - cell "$2,855.00" [ref=f2e318]
+          - row [ref=f2e319]:
+            - rowheader "February" [ref=f2e320]
+            - cell "$850.00" [ref=f2e321]
+          - row [ref=f2e322]:
+            - rowheader "March" [ref=f2e323]
+            - cell "$0.00" [ref=f2e324]
+          - row [ref=f2e325]:
+            - rowheader "April" [ref=f2e326]
+            - cell "$0.00" [ref=f2e327]
+          - row [ref=f2e328]:
+            - rowheader "May" [ref=f2e329]
+            - cell "$0.00" [ref=f2e330]
+          - row [ref=f2e331]:
+            - rowheader "June" [ref=f2e332]
+            - cell "$0.00" [ref=f2e333]
+          - row [ref=f2e334]:
+            - rowheader "July" [ref=f2e335]
+            - cell "$0.00" [ref=f2e336]
+          - row [ref=f2e337]:
+            - rowheader "August" [ref=f2e338]
+            - cell "$0.00" [ref=f2e339]
+          - row [ref=f2e340]:
+            - rowheader "September" [ref=f2e341]
+            - cell "$0.00" [ref=f2e342]
+          - row [ref=f2e343]:
+            - rowheader "October" [ref=f2e344]
+            - cell "$0.00" [ref=f2e345]
+          - row [ref=f2e346]:
+            - rowheader "November" [ref=f2e347]
+            - cell "$0.00" [ref=f2e348]
+          - row [ref=f2e349]:
+            - rowheader "December" [ref=f2e350]
+            - cell "$0.00" [ref=f2e351]
+    - generic [ref=f2e280]:
+      - generic [ref=f2e281]: Spend thoughtfully. Live fully.
+      - generic [ref=f2e282]: Stored in your browser · No account needed
